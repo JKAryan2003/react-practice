@@ -1,3 +1,8 @@
+import Two1 from "./components/AddingInteractivity/Two1";
+import Two2 from "./components/AddingInteractivity/Two2";
+import Two3 from "./components/AddingInteractivity/Two3";
+import Two4 from "./components/AddingInteractivity/Two4";
+import Two5 from "./components/AddingInteractivity/Two5";
 import { One1 } from "./components/DescribingUI/One1";
 import One2 from "./components/DescribingUI/One2";
 import One3 from "./components/DescribingUI/One3";
@@ -19,13 +24,16 @@ export default function App() {
         awards: "2 (Miyake Prize for geochemistry, Tanaka Prize)",
         discovered: "a method for measuring carbon dioxide in seawater"
       }} />  */}
-
       {/* <One2 /> */}
-
       {/* <One3 /> */}
-
       {/* <One4 /> */}
-      <One5 />
+      {/* <One5 /> */}
+
+      {/* <Two1 /> */}
+      {/* <Two2 /> */}
+      {/* <Two3 /> */}
+      {/* <Two4 /> */}
+      {/* <Two5 /> */}
     </>
   )
  
