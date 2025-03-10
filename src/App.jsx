@@ -8,6 +8,11 @@ import One2 from "./components/DescribingUI/One2";
 import One3 from "./components/DescribingUI/One3";
 import One4 from "./components/DescribingUI/One4";
 import One5 from "./components/DescribingUI/One5";
+import Three1 from "./components/ManagingState/Three1";
+import Three2 from "./components/ManagingState/Three2";
+import Three3 from "./components/ManagingState/Three3";
+import Three4 from "./components/ManagingState/Three4";
+import "./App.css"
 
 export default function App() {
   return (
@@ -34,6 +39,11 @@ export default function App() {
       {/* <Two3 /> */}
       {/* <Two4 /> */}
       {/* <Two5 /> */}
+
+      {/* <Three1 /> */}
+      {/* <Three2 /> */}
+      {/* <Three3 /> */}
+      <Three4 />
     </>
   )
  
