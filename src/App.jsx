@@ -17,6 +17,7 @@ import Four1 from "./components/EscapeHatches/Four1";
 import Four2 from "./components/EscapeHatches/Four2";
 import Three5 from "./components/ManagingState/Three5";
 import Three6 from "./components/ManagingState/Three6";
+import Four3 from "./components/EscapeHatches/Four3";
 
 export default function App() {
   return (
@@ -49,10 +50,12 @@ export default function App() {
       {/* <Three3 /> */}
       {/* <Three4 /> */}
       {/* <Three5 /> */}
+      {/* <Three6 /> */}
 
       {/* <Four1 /> */}
-      <Four2 />
-      {/* <Three6 /> */}
+      {/* <Four2 /> */}
+      <Four3 />
+      
     </>
   )
  
