@@ -13,6 +13,10 @@ import Three2 from "./components/ManagingState/Three2";
 import Three3 from "./components/ManagingState/Three3";
 import Three4 from "./components/ManagingState/Three4";
 import "./App.css"
+import Four1 from "./components/EscapeHatches/Four1";
+import Four2 from "./components/EscapeHatches/Four2";
+import Three5 from "./components/ManagingState/Three5";
+import Three6 from "./components/ManagingState/Three6";
 
 export default function App() {
   return (
@@ -43,7 +47,12 @@ export default function App() {
       {/* <Three1 /> */}
       {/* <Three2 /> */}
       {/* <Three3 /> */}
-      <Three4 />
+      {/* <Three4 /> */}
+      {/* <Three5 /> */}
+
+      {/* <Four1 /> */}
+      <Four2 />
+      {/* <Three6 /> */}
     </>
   )
  
