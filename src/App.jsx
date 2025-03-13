@@ -23,6 +23,7 @@ import Four5 from "./components/EscapeHatches/Four5";
 import One from "./components/Practice/One";
 import Two from "./components/Practice/Two";
 import Three from "./components/Practice/Three";
+import Four from "./components/Practice/Four";
 
 export default function App() {
   return (
@@ -67,7 +68,8 @@ export default function App() {
       <One />
       <One /> */}
       {/* <Two /> */}
-      <Three />
+      {/* <Three /> */}
+      <Four />
       
     </>
   )
