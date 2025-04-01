@@ -28,6 +28,7 @@ import Four from "./components/Practice/Four";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/Router/Home";
 import NavBar from "./components/Router/NavBar";
+import Params from "./components/Router/Params";
 
 const router = createBrowserRouter(
   [
@@ -64,6 +65,15 @@ const router = createBrowserRouter(
       <div>
         <NavBar />
         <Four3 />
+      </div>
+    },
+
+    {
+      path: "/student/:id",
+      element: 
+      <div>
+        <NavBar />
+        <Params />
       </div>
     }
   ]

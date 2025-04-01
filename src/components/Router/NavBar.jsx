@@ -26,6 +26,11 @@ const NavBar = () => {
           {/* <Link to='/four3'>Four 3</Link> */}
           <NavLink to='/four3' className={({isActive}) => isActive ? "active-link" : ""}>Four 3</NavLink>
         </li>
+        <li>
+          {/* <a href="/four3">Four 3</a> */}
+          {/* <Link to='/four3'>Four 3</Link> */}
+          <NavLink to='/student/5' className={({isActive}) => isActive ? "active-link" : ""}>Params</NavLink>
+        </li>
       </ul>
     </div>
   )
