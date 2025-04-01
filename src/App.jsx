@@ -29,6 +29,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/Router/Home";
 import NavBar from "./components/Router/NavBar";
 import Params from "./components/Router/Params";
+import NotFound from "./components/Router/NotFound";
 
 const router = createBrowserRouter(
   [
@@ -85,6 +86,11 @@ const router = createBrowserRouter(
         <NavBar />
         <Params />
       </div>
+    }, 
+
+    {
+      path: '*',
+      element: <NotFound />
     }
   ]
 )
