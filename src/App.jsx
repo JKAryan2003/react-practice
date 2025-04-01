@@ -25,7 +25,29 @@ import Two from "./components/Practice/Two";
 import Three from "./components/Practice/Three";
 import Four from "./components/Practice/Four";
 
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+const router = createBrowserRouter(
+  [
+    {
+      path: "/four1",
+      element: <Four1 />
+    },
+
+    {
+      path: "/four2",
+      element: <Four2 />
+    },
+
+    {
+      path: "/four3",
+      element: <Four3 />
+    }
+  ]
+)
+
 export default function App() {
+
   return (
     <>
       {/* <One1 person={{name: "Maria Skłodowska-Curie",
