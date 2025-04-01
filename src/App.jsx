@@ -65,7 +65,17 @@ const router = createBrowserRouter(
       <div>
         <NavBar />
         <Four3 />
-      </div>
+      </div>,
+      children: [
+        {
+          path: 'three1',
+          element: 
+          <div>
+            <NavBar />
+            <Three1 />
+          </div>
+        }
+      ]
     },
 
     {

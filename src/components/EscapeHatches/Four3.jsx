@@ -1,10 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import NavBar from '../Router/NavBar';
+import { Outlet, useNavigate } from 'react-router-dom';
 
 const Four3 = () => {
 
   const [count, setCount] = useState(0);
   const [total, setTotal] = useState(1);  
+  const navigate = useNavigate()
+
+  const handleButton = () => {
+    navigate('three1')
+  }
 
   //runs on every render
   // useEffect(() => {
@@ -55,6 +61,9 @@ const Four3 = () => {
       <button onClick={hanldeTotal}>
         Total
       </button>
+
+      <button onClick={handleButton}>Go to three 1</button>
+      <Outlet />
     </div>
   )
 }
