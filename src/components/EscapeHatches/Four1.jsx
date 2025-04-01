@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import NavBar from '../Router/NavBar';
 
 const Four1 = () => {
 

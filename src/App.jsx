@@ -26,9 +26,16 @@ import Three from "./components/Practice/Three";
 import Four from "./components/Practice/Four";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./components/Router/Home";
+import NavBar from "./components/Router/NavBar";
 
 const router = createBrowserRouter(
   [
+    {
+      path: "/",
+      element: <Home />
+    },
+
     {
       path: "/four1",
       element: <Four1 />
@@ -91,8 +98,9 @@ export default function App() {
       <One /> */}
       {/* <Two /> */}
       {/* <Three /> */}
-      <Four />
-      
+      {/* <Four /> */}
+      <NavBar />
+      <RouterProvider router={router}></RouterProvider>
     </>
   )
  

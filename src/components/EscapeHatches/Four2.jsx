@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import NavBar from '../Router/NavBar';
 
 const Four2 = () => {
 
@@ -23,6 +24,7 @@ const Four2 = () => {
 
   return (
     <div>
+
       <h1>Stopwatch: {time}</h1>
 
       <button onClick={startTimer}>
