@@ -26,22 +26,71 @@ import Three from "./components/Practice/Three";
 import Four from "./components/Practice/Four";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./components/Router/Home";
+import NavBar from "./components/Router/NavBar";
+import Params from "./components/Router/Params";
+import NotFound from "./components/Router/NotFound";
 
 const router = createBrowserRouter(
   [
     {
+      path: "/",
+      element: 
+      <div>
+        <NavBar />
+        <Home />
+      </div>
+    },
+
+    {
       path: "/four1",
-      element: <Four1 />
+      element: 
+      <div>
+        <NavBar />
+        <Four1 />
+      </div>
     },
 
     {
       path: "/four2",
-      element: <Four2 />
+      element: 
+      <div>
+        <NavBar />
+        <Four2 />
+      </div>
     },
 
     {
       path: "/four3",
-      element: <Four3 />
+      element: 
+      <div>
+        <NavBar />
+        <Four3 />
+      </div>,
+      children: [
+        {
+          path: 'three1',
+          element: 
+          <div>
+            <NavBar />
+            <Three1 />
+          </div>
+        }
+      ]
+    },
+
+    {
+      path: "/student/:id",
+      element: 
+      <div>
+        <NavBar />
+        <Params />
+      </div>
+    }, 
+
+    {
+      path: '*',
+      element: <NotFound />
     }
   ]
 )
@@ -91,8 +140,9 @@ export default function App() {
       <One /> */}
       {/* <Two /> */}
       {/* <Three /> */}
-      <Four />
+      {/* <Four /> */}
       
+      <RouterProvider router={router}></RouterProvider>
     </>
   )
  
