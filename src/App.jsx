@@ -33,22 +33,38 @@ const router = createBrowserRouter(
   [
     {
       path: "/",
-      element: <Home />
+      element: 
+      <div>
+        <NavBar />
+        <Home />
+      </div>
     },
 
     {
       path: "/four1",
-      element: <Four1 />
+      element: 
+      <div>
+        <NavBar />
+        <Four1 />
+      </div>
     },
 
     {
       path: "/four2",
-      element: <Four2 />
+      element: 
+      <div>
+        <NavBar />
+        <Four2 />
+      </div>
     },
 
     {
       path: "/four3",
-      element: <Four3 />
+      element: 
+      <div>
+        <NavBar />
+        <Four3 />
+      </div>
     }
   ]
 )
@@ -99,7 +115,7 @@ export default function App() {
       {/* <Two /> */}
       {/* <Three /> */}
       {/* <Four /> */}
-      <NavBar />
+      
       <RouterProvider router={router}></RouterProvider>
     </>
   )
